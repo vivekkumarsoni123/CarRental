@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f8fa; /* Soft light background for all pages */
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header, .footer {
+  background: #fff; /* Solid white background for header/footer */
+  color: #222;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header a, .footer a {
+  color: #222;
+}
+
+.card, .tab-content, .dashboard-form, .styled-form {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.button, .form-button {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.button:hover, .form-button:hover {
+  background: linear-gradient(135deg, #38f9d7, #43e97b);
+}
+
+.styled-form {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border: 1px solid #43e97b;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+  padding: 30px 24px;
+  margin-bottom: 32px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styled-form h3 {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #b2f7c1;
+  font-size: 1rem;
+  background: #f6fff7;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #43e97b;
+  outline: none;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #4CAF50, #2196F3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-button:hover {
+  background: linear-gradient(135deg, #2196F3, #4CAF50);
+}
+
+.form-message {
+  margin-top: 10px;
+  text-align: center;
+  color: #43e97b;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header, .footer {
+    padding: 15px 0;
+  }
+}

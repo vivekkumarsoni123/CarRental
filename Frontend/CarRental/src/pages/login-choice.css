@@ -1,0 +1,224 @@
+/* Login Choice Styles */
+.login-choice-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f8fa; /* Neutral background */
+    padding: 20px;
+}
+
+.choice-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.choice-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #2196F3, #FF9800);
+}
+
+.choice-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choice-header h1 {
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background-clip: initial;
+}
+
+.choice-header p {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.choice-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.choice-option {
+    text-decoration: none;
+    color: inherit;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #e1e5e9;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.choice-option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.05), rgba(33, 150, 243, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.choice-option:hover::before {
+    opacity: 1;
+}
+
+.choice-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-color: #4CAF50;
+}
+
+.choice-option.customer:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 15px 30px rgba(76, 175, 80, 0.2);
+}
+
+.choice-option.admin:hover {
+    border-color: #2196F3;
+    box-shadow: 0 15px 30px rgba(33, 150, 243, 0.2);
+}
+
+.option-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.choice-option h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.choice-option p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.option-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.option-features span {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.choice-footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e1e5e9;
+}
+
+.choice-footer p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.choice-footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.choice-footer a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .choice-card {
+        padding: 30px 20px;
+    }
+    
+    .choice-header h1 {
+        font-size: 2rem;
+    }
+    
+    .choice-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .choice-option {
+        padding: 25px 20px;
+    }
+    
+    .option-icon {
+        font-size: 2.5rem;
+    }
+    
+    .choice-option h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice-card {
+        padding: 25px 15px;
+        margin: 10px;
+    }
+    
+    .choice-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .choice-header p {
+        font-size: 1rem;
+    }
+    
+    .choice-option {
+        padding: 20px 15px;
+    }
+    
+    .option-icon {
+        font-size: 2rem;
+    }
+    
+    .choice-option h2 {
+        font-size: 1.2rem;
+    }
+    
+    .choice-option p {
+        font-size: 0.9rem;
+    }
+    
+    .option-features span {
+        font-size: 0.8rem;
+    }
+}
