@@ -1,8 +1,4 @@
-Ah, I see the issue 👍 — the error in your README preview is due to **mismatched code block backticks** (\`\`\`\` vs `). In Markdown, you must consistently use triple backticks (`) to open and close fenced code blocks.
 
-Here’s your **fixed README.md** (clean and working in GitHub preview):
-
-````markdown
 # 🚗 Car Rental Management System
 
 A **full-stack web application** for managing car rentals, built with **Spring Boot (Java)** for the backend, **React.js** for the frontend, and **MySQL** as the database. This system allows **admins** to manage companies and car variants, while **customers** can browse and book cars seamlessly.
@@ -71,7 +67,7 @@ npm install
 npm start
 ```
 
-* Default server runs on: `http://localhost:3000`
+* Default server runs on: `http://localhost:5071`
 
 ### 4️⃣ Database Setup
 
@@ -83,7 +79,12 @@ npm start
 
 ## 📸 Screenshots (Optional)
 
-*Add screenshots or demo GIFs here to showcase UI and features.*
+<img width="1911" height="993" alt="image" src="https://github.com/user-attachments/assets/4eee153d-ecb5-4f46-812d-a463c7866dc7" />
+<img width="1915" height="1022" alt="image" src="https://github.com/user-attachments/assets/ce79e3e4-847f-44f5-bf2e-a0ca78bdb103" />
+<img width="1585" height="826" alt="image" src="https://github.com/user-attachments/assets/3ac59618-7b11-4845-9436-7dfc0693290d" />
+<img width="1690" height="976" alt="image" src="https://github.com/user-attachments/assets/96196a71-fc66-419b-bd56-dfee9907a16a" />
+
+
 
 ---
 
@@ -103,9 +104,4 @@ npm start
 * [LinkedIn](https://linkedin.com/in/vivek-kumar-soni-9b2591258)
 * [GitHub](https://github.com/vivekkumarsoni123)
 
-```
-
-✅ This version will render correctly in GitHub/GitLab/VS Code preview.  
-
-Do you also want me to create a **nice architecture diagram (PNG)** that you can embed in the README under the “Architecture” section?
 ```
